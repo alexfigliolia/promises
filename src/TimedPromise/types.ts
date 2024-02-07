@@ -12,4 +12,4 @@ interface TimedPromiseResult<T, R extends boolean> {
 }
 
 export type TimedPromiseResolution<T> = TimedPromiseResult<T, false>;
-export type TimedPromiseRejection = TimedPromiseResult<unknown, true>;
+export type TimedPromiseRejection<T = unknown> = TimedPromiseResult<T, true>;
